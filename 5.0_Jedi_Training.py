@@ -1,4 +1,4 @@
-# 5.0 Jedi Training (50pts)  Name:________________
+# 5.0 Jedi Training (50pts)  Name: Jonathan Reischel
 
 '''
  1. Make the following program work. LIST THE 3 MISTAKES (5pts)
@@ -10,40 +10,37 @@
          total+=i
      print("The total is:", x)
 
-#1
-#2
-#3
+#1 The lines of code have been indented to far our. the print, total, and for loop should not be indented.
+# And the x =, and total+=1 should only be indented once.
+#2 the x equals should be int(input("Enter a number: ")
+#3 the total should equal x while the last print statment should include x print("The total is:", x)
 
 
 '''
   2. Write a Python program that will use a FOR loop to print the even
      numbers from 2 to 100, inclusive. (5pts)
 '''
-
-
-
-
-
+var = 10
+while var > -1:
+    print(var)
+    var -= 1
+if var == -1:
+    print("blast off!")
 '''
   3. Write a program that will use a WHILE loop to count from
      10 down to, and including, 0. Then print the words Blast off! Remember, use
      a WHILE loop, don't use a FOR loop. (5pts)
 '''
-
-
-
-
-
-
+i = 10
+while i > -1:
+    print(i)
+    i -= 1
 '''
   4. Write a program that prints a random integer from 1 to 10 (inclusive). (5pts)
 '''
-
-
-
-
-
-
+import random
+my_number = random.randrange(1, 11)
+print(my_number)
 '''
   5. 7 NUMBER ANALYSIS (5pts)
      
@@ -86,8 +83,9 @@ Each round, tell me what the computer chose, what I chose and also if I won, los
 When the user quits, print an end game message and their win/loss/tie record
 
 '''
-
-
-
-
-
+import random
+my_number = random.randrange(1, 4)
+x = int(input("What do you choose? rock for  1 paper for to scissors for 3 and 4 to quit"))
+win = ("you beat the computer and won")
+tie = ("You tied with the computer")
+lost = ("you lost the computer won")
